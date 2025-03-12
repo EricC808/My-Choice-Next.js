@@ -1,0 +1,56 @@
+/* Global Styles */
+body {
+  background: linear-gradient(to bottom, #222, #555);
+  color: white;
+  text-align: center;
+}
+
+/* TopMenu Styles */
+.topMenu {
+  background-color: #000 !important;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.topMenu .navbar-brand img {
+  height: 40px;
+}
+
+.topMenu .nav-link {
+  color: white !important;
+}
+
+.topMenu .nav-link:hover {
+  color: #c89c3c !important;
+}
+
+/* Hero Section */
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 60px); /* Leaves space for the TopMenu */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Buttons */
+.btn-warning {
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.btn-outline-light {
+  border: none !important;
+  color: white !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heroSection {
+    height: 60vh;
+  }
+}
